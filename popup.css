@@ -1,0 +1,137 @@
+.note.expanded .note-body {
+  display: block;
+}
+
+.note-body {
+  display: none;
+  margin-top: 10px;
+  background-color: white;
+  
+}
+
+.delete-button {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.header {
+  font-size: 20px;  
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;  
+  letter-spacing: px;  
+  color: #000000; 
+}
+
+#notesContainer {
+  margin-bottom: 20px;
+}
+
+.note {
+  position: relative;
+  padding-right: 25px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  min-height:20px;
+  text-transform: uppercase; 
+}
+
+
+.note .body {
+  display: none;
+}
+
+.note.expanded .body {
+  background-color: #f7f7f7; 
+  color: black; 
+  text-transform: lowercase;
+}
+
+
+.note .delete:hover {
+  background-color: #c60000;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #003080;
+}
+
+.button:active {
+  background-color:#0056b3;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.note.expanded {
+  background-color: #bd0707; 
+}
+
+.note.expanded .title {
+  color: black; 
+}
+
+.popup {
+  background-color: #04eeff; 
+  padding: 20px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  max-width: 400px; 
+  margin: 0 auto; 
+}

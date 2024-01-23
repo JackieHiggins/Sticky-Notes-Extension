@@ -1,1 +1,1 @@
-# Sticky-Notes-Extension
+# Sticky-Notes-Chrome-Extension

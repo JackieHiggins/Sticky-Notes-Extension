@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+#urlsList {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #0044cc;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:not(.active) {
+  display: none;
+}
+
+#urlsList {
+  display: block;
+}
+
+#displaySettingsForm {
+  display: none;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="color"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+

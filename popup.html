@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+      body {
+        background-color: rgb(243, 240, 240);
+      }
+      .header {
+        display: flex;
+        align-items: center;
+      }
+      
+      .logo {
+        margin-right: 10px;
+      }
+
+      .settings-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        background-image: url('images/gear.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="settings-button" id="settingsButton"></div>
+    <div class="header">
+      <img src="images/icon48.png" alt="Logo" class="logo">
+      <h3>Sticky Snippets</h3>
+    </div>
+    <div id="notesContainer"></div>
+    <div class = "button-container">
+      <button id="addNoteButton" class="button">Add Note</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(216, 216, 216);
+      height:auto;
+      visibility:hidden;
+    }
+
+    #settings-container {
+      display: flex;
+    }
+
+    #tabs {
+
+      border-radius: 10px 0 0 10px;
+
+      overflow: hidden;
+    }
+
+    .tab {
+      display: block;
+      width: 100px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      border:none;
+      margin-bottom: 20px;
+      background-color: #0056b3;
+      color:white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .tab:hover{
+
+      background-color: #062f77;
+    }
+
+    .tab.active {
+      background-color: #042052;
+    }
+
+    #content {
+      flex: 1;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-left: 20px;
+      padding: 20px;
+    }
+
+    
+
+    #submitButton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    }
+
+    .submit{
+      border: none;
+
+    }
+
+    #submitButton:hover {
+      background-color: #003080;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="settings-container">
+    <div id="tabs">
+      <button id="urlsTab" class="tab active">URLs</button>
+      <button id="displayTab" class="tab">Display</button>
+    </div>
+    <div id="content">
+      <div id="urlsList" class="tab-content"></div>
+      <form id="displaySettingsForm" class="tab-content">
+        <label for="backgroundColor">Background Color:</label>
+        <input type="color" id="backgroundColor" name="backgroundColor"><br><br>
+        <label for="fontColor">Font Color:</label>
+        <input type="color" id="fontColor" name="fontColor"><br><br>
+        <label for="fontSize">Font Size:</label>
+        <input type="number" id="fontSize" name="fontSize" min="8" max="48" step="2"><br><br>
+        <button type="submit" id="submitButton">Save</button>
+      </form>
+    </div>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>
+
+
